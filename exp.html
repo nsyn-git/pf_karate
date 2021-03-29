@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/js.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap" rel="stylesheet">
+
+  <title>武神流空手STUDIO</title>
+</head>
+<body>
+  <header class="hd_pc">
+    <div class="nv">
+        <ul class="nv_li">
+          <li><a href="/class.html">クラス案内</a></li>
+          <li><a href="#">スケジュール</a></li>
+          <li><a href="exp.html">体験レッスン</a></li>
+          <li><a href="#">スタッフ</a></li>
+          <li><a href="#">料金</a></li>
+          <li><a href="/">ホーム</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">代表挨拶</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="contact.html">お問合せ</a></li>
+        </ul>
+    </div>
+  </header>
+  
+<!--レスポンシブ用トップ-->
+<div class="r_logo">
+    <a href="/">
+      <img src="/img/S2.png">
+    </a>
+    <p>武神流空手STUDIO</p>
+    <p>-bushinryu-</p>
+</div>
+
+<!-- ハンバーガーメニュー用 -->
+<div id="navArea">
+  <nav>
+    <div class="inner">
+      <ul>
+        <li><a href="/class.html">クラス案内</a></li>
+        <li><a href="#">スケジュール</a></li>
+        <li><a href="exp.html">体験レッスン</a></li>
+        <li><a href="#">スタッフ</a></li>
+        <li><a href="#">料金</a></li>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="#">ブログ</a></li>
+        <li><a href="#">代表挨拶</a></li>
+        <li><a href="#">アクセス</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+<!-- ハンバーガーメニューここまで -->
+
+<section class="wrap class_menu">
+  <div class="ex_dtl">
+    <h2>
+      体験レッスン内容
+    </h2>
+    <p>
+      体験レッスン内容の一例です。<br>
+      日々新しいプログラムを取り組んでいくので、<br>
+      飽きのないレッスンを目指します。
+    </p>
+
+    <h2>
+      【体験レッスンの流れ】
+    </h2>
+    <p>
+      正座、黙想<br>
+      ↓<br>
+      ストレッチ<br>
+      ↓<br>
+      基本稽古<br>
+      ↓<br>
+      移動稽古<br>
+      ↓<br>
+      型「かた」<br>
+      ↓<br>
+      キックミット<br>
+      ↓<br>
+      体幹トレーニング<br>
+      ↓<br>
+      正座、黙想
+    </p>
+  </div>
+  
+  <div class="wrapper grid">
+    <div class="item">
+      <img src="/img/ex1.png" alt="menu1">
+      <p>①柔軟ストレッチ</p>
+    </div>
+    <div class="item">
+      <img src="/img/ex2.png" alt="menu2">
+      <p>②基本稽古</p>
+    </div>
+    <div class="item">
+      <img src="/img/ex3.png" alt="menu3">
+      <p>③移動稽古 / 型</p>
+    </div>
+    <div class="item">
+      <img src="/img/ex4.png" alt="menu4">
+      <p>④キックミット (パンチ）</p>
+    </div>
+    <div class="item">
+      <img src="/img/ex5.png" alt="menu5">
+      <p>⑤キックミット (蹴り)</p>
+    </div>
+    <div class="item">
+      <img src="/img/ex5.png" alt="menu6">
+      <p>⑥体幹トレーニング</p>
+    </div><!--/.item-->
+  </div><!--/.grid-->
+</section>
+
+<section class="contact">
+  <div class="logo">
+    <a href="/">
+      <img src="/img/S2.png" alt="logo">
+    </a>
+    <p>武神流空手STUDIO -bushinryu-</p>
+  </div>
+
+  <div class="c_link c_contact">
+    <a href="contact.html">お申込・お問い合わせ</a>	
+  </div>
+
+  <div class="c_tel">
+    <p>お電話のお問い合わせはこちら</p>
+    <p><span>tel.</span>06-1234-5678</p>
+  </div>
+</section>
+
+<footer>
+  <div class="copyright">
+		© 武神流空手STUDIO Inc. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- jqueryの読み込み -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  // ハンバーガーメニュー
+    (function($) {
+      let $nav   = $('#navArea');
+      let $btn   = $('.toggle_btn');
+      let $mask  = $('#mask');
+      let open   = 'open'; // class
+      // menu open close
+      $btn.on( 'click', function() {
+        if ( ! $nav.hasClass( open ) ) {
+          $nav.addClass( open );
+        } else {
+          $nav.removeClass( open );
+        }
+      });
+      // mask close
+      $mask.on('click', function() {
+        $nav.removeClass( open );
+      });
+    } )(jQuery);
+    // ハンバーガーメニューここまで
+</script>
+
+</body>
+</html>

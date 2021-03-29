@@ -1,0 +1,455 @@
+.hd_pc{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.r_logo{
+  text-align: center;
+}
+
+.nv_li li a,
+.c_item a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nv_li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  width: 100%;
+  height: 60px;
+}
+
+.nv_li li{
+  color:white;
+}
+
+.nv{
+  background-color: #F20C3B;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* スライダー用 */
+.slider {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.slider img{
+  width: 100%;
+  border-radius:20px;
+}
+
+/* コンテナ用 */
+.container{
+  display: grid;
+  gap:15px;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.c_item{
+  min-height: 160px;
+  max-height: 300px;
+  border-radius: 20px;
+  background-color: #F8890A;
+  }
+
+.c_item a{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 70px 0;
+  font-size: large;
+}
+
+/* ニュース */
+.news_title{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.news{
+  display: flex;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  border-bottom-color:black;
+}
+
+.news_li{
+  margin-left: 30px;
+  border-bottom-color:black;
+}
+
+.news_li a,
+.links a,
+.e_link a,
+.c_link a{
+  text-decoration: none;
+}
+
+.links{
+  text-align: right;
+}
+
+/* 体験レッスン */
+.experience {
+  display: block;
+  background-image: url(../img/experience-bg.png);
+  padding: 45px 0 65px;
+  background-size: cover;
+  text-align: center;
+}
+
+.e_h2{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.e_link{
+  width: 270px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0px grey;
+  border-radius: 7px;
+}
+
+.e_link a,
+.c_link a{
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0;
+  width: 250px;
+  display: inline-block;
+  transition: .5s;
+  border-radius: 20px;
+}
+
+/* youtube */
+.youtube{
+  padding-top: 50px;
+}
+
+.yt_li{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.yt_li li{
+  list-style: none;
+}
+
+/* SNS */
+.sns{
+  text-align: center;
+}
+
+.sns_area img{
+  width: 8%;
+  margin-right: 50px;
+}
+
+/* コンタクト */
+.logo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo p,
+.r_logo p{
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 2rem;
+}
+
+.contact{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F0F0F0;
+}
+
+.c_link{
+  width: 270px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0px grey;
+  border-radius: 7px;
+}
+
+.c_contact,
+.c_contact a{
+  background-color: #F86A6A;
+  color: white;
+  font-weight: bold;
+}
+
+.c_tel{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.c_tel p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c_tel p span{
+  font-size: 0.8rem;
+}
+/* フッター */
+.copyright {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 11px;
+  background-color:#6E6A6A;
+  color: #fff;
+}
+
+/* クラス */
+.class_menu{
+  /* width: 100%; */
+  padding-top: 100px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 18px;
+}
+
+.class_btn{
+  display: flex;
+  list-style: none;
+}
+
+.class_btn li{
+  width: 30%;
+  margin-right: 2%;
+  border-left: 1px solid #C2C2C2;
+  border-right: 1px solid #C2C2C2;
+  border-bottom: 1px solid #C2C2C2;
+  box-shadow: 0 2px 5px 0 rgb(127 127 127 / 50%);
+}
+
+.class_btn li:first-child{
+  border-top: 5px solid #E68396;
+}
+
+.class_btn li:nth-child(2){
+  border-top: 5px solid #CFD634;
+}
+
+.class_btn li:last-child{
+  border-top: 5px solid #15A3BF;
+}
+
+.class_btn li p{
+  background: #ffffff;
+  display: block;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #666666;
+  text-decoration: none;
+  transition: .3s ease all;
+  cursor: pointer;
+}
+
+.class_w img,
+.class_c img,
+.class_a img{
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
+.class_w,
+.class_c,
+.class_a{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.class_int{
+  text-align: center;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.class_tl{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.class_dtl{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-left: 10%;
+}
+
+.class_w.hide{
+  display: none;
+}
+
+.class_c.hide{
+  display: none;
+}
+
+.class_a.hide{
+  display: none;
+}
+
+/*体験レッスン詳細紹介*/
+.ex_dtl{
+  text-align: center;
+}
+
+.ex_dtl h2{
+  color: brown;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.ex_dtl p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+/* フォーム */
+.contact_f{
+  padding-top: 100px;
+  padding-left: 60px;
+}
+
+.contact_m{
+  padding-bottom: 60px;
+}
+
+form h1{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+form div{
+  margin-bottom: 14px;
+}
+
+form label{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"]{
+  background: rgba(255,255,255,.5);
+  border: 1p gray solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"]{
+  width:100%;
+  max-width: 240px;
+}
+
+textarea{
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+/*モバイル版
+--------------------------*/
+@media screen and (min-width:900px) {
+  #navArea {
+    display:none;
+   }
+  
+  .r_logo{
+    display: none;
+  }
+ }
+
+@media (max-width:900px){
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+
+  .nv{
+    display: none;
+  }
+
+  .class_w,
+  .class_c,
+  .class_a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .class_w img,
+  .class_c img,
+  .class_a img{
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+  .class_dtl{
+    min-width: 65%;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/js.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap" rel="stylesheet">
+
+  <title>武神流空手STUDIO</title>
+</head>
+<body>
+  <header class="hd_pc">
+    <div class="nv">
+        <ul class="nv_li">
+          <li><a href="/class.html">クラス案内</a></li>
+          <li><a href="#">スケジュール</a></li>
+          <li><a href="exp.html">体験レッスン</a></li>
+          <li><a href="#">スタッフ</a></li>
+          <li><a href="#">料金</a></li>
+          <li><a href="/">ホーム</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">代表挨拶</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="contact.html">お問合せ</a></li>
+        </ul>
+    </div>
+  </header>
+  
+<!--レスポンシブ用トップ-->
+<div class="r_logo">
+    <a href="/">
+      <img src="/img/S2.png">
+    </a>
+    <p>武神流空手STUDIO</p>
+    <p>-bushinryu-</p>
+</div>
+
+<!-- ハンバーガーメニュー用 -->
+<div id="navArea">
+  <nav>
+    <div class="inner">
+      <ul>
+        <li><a href="/class.html">クラス案内</a></li>
+        <li><a href="#">スケジュール</a></li>
+        <li><a href="exp.html">体験レッスン</a></li>
+        <li><a href="#">スタッフ</a></li>
+        <li><a href="#">料金</a></li>
+        <li><a href="/">ホーム</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="#">ブログ</a></li>
+        <li><a href="#">代表挨拶</a></li>
+        <li><a href="#">アクセス</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+<!-- ハンバーガーメニューここまで -->
+
+<section class="wrap">
+  <form action="insert.php" class="contact_f" method="POST">
+    <h1>お申込み・お問合せ</h1>
+    <p class="contact_m">武神流空手STUDIOへのお問合せは下記のフォームから送信してください。(<span>*</span>印は必須項目です)</p>
+    <div>
+      <label for="name">
+        お名前<span>*</span>
+      </label>
+      <input type="text" name="name" size="30" value="">
+    </div>
+    <div>
+      <label for="kana_name">
+        フリガナ<span>*</span>
+      </label>
+      <input type="text" name="kana_name" value="" />
+    </div>
+    <div>
+      <label for="b_day">
+        生年月日<span>*</span>
+      </label>
+      <input type="text" name="b_day"  value="" placeholder="例）1980/01/23" />
+    </div>
+    <div>
+      <label for="sex">
+        性別<span>*</span>
+      </label>
+      <select name="sex" >
+      <option value="- 未選択 -" >
+      - 未選択 -		</option>
+      <option value="男性" >
+      男性		</option>
+      <option value="女性" >
+      女性		</option>
+      <option value="その他" >
+      その他		</option>
+      </select>
+    </div>
+    <div>
+      <label for="mail">
+        メールアドレス<span >*</span>
+      </label>
+      <input type="email" name="mail" value="" />
+    </div>
+    <div>
+      <label for="question">
+        お問い合わせ内容<span >*</span>
+      </label>
+      <select name="q_category" >
+        <option value="- 未選択 -" >
+        - 未選択 -		</option>
+        <option value="無料体験を希望" >
+        無料体験を希望		</option>
+        <option value="入会を希望" >
+        入会を希望		</option>
+        <option value="その他" >
+        その他		</option>
+      </select>
+    </div>
+    <div>
+      <label for="message">
+        メッセージ<span>*</span>
+      </label>
+      <span>ご意見、ご質問、体験希望の方は参加希望日時を入力ください。</span>
+      <p>
+        <textarea name="message"></textarea>
+      </p>
+    </div>
+  
+    <div class="contact-submit">
+      <span></span>
+      <span>
+      <input type="submit" name="submitConfirm" value="入力内容の確認"/>
+      </span>
+    </div>
+  
+  </form>
+</section>
+
+<footer>
+  <div class="copyright">
+		© 武神流空手STUDIO Inc. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- jqueryの読み込み -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  // ハンバーガーメニュー
+    (function($) {
+      let $nav   = $('#navArea');
+      let $btn   = $('.toggle_btn');
+      let $mask  = $('#mask');
+      let open   = 'open'; // class
+      // menu open close
+      $btn.on( 'click', function() {
+        if ( ! $nav.hasClass( open ) ) {
+          $nav.addClass( open );
+        } else {
+          $nav.removeClass( open );
+        }
+      });
+      // mask close
+      $mask.on('click', function() {
+        $nav.removeClass( open );
+      });
+    } )(jQuery);
+    // ハンバーガーメニューここまで
+</script>
+
+</body>
+</html>
